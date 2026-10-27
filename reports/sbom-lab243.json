@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:028afcd9-71a6-4508-9ffe-28c20c6334e9",
+  "serialNumber": "urn:uuid:f3b0a65e-9cb4-4997-a8de-34fb1a45eccc",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-10-26T23:34:21+00:00",
+    "timestamp": "2026-10-27T00:46:53+00:00",
     "tools": {
       "components": [
         {
@@ -20,10 +20,10 @@
       ]
     },
     "component": {
-      "bom-ref": "pkg:oci/lab243@sha256:4ae88e75e1792f6b57f6b6bd0d9e36e7c23006b0879aa9e2145f1dacfb66bc96?arch=amd64&repository_url=index.docker.io%2Flibrary%2Flab243",
+      "bom-ref": "pkg:oci/lab243@sha256:9afd93bda122ca4a8d6d099c90d425c791912112ced6f3d81de14c227154d71c?arch=amd64&repository_url=index.docker.io%2Flibrary%2Flab243",
       "type": "container",
       "name": "lab243:1.0.0",
-      "purl": "pkg:oci/lab243@sha256:4ae88e75e1792f6b57f6b6bd0d9e36e7c23006b0879aa9e2145f1dacfb66bc96?arch=amd64&repository_url=index.docker.io%2Flibrary%2Flab243",
+      "purl": "pkg:oci/lab243@sha256:9afd93bda122ca4a8d6d099c90d425c791912112ced6f3d81de14c227154d71c?arch=amd64&repository_url=index.docker.io%2Flibrary%2Flab243",
       "properties": [
         {
           "name": "aquasecurity:trivy:DiffID",
@@ -79,7 +79,7 @@
         },
         {
           "name": "aquasecurity:trivy:ImageID",
-          "value": "sha256:4ae88e75e1792f6b57f6b6bd0d9e36e7c23006b0879aa9e2145f1dacfb66bc96"
+          "value": "sha256:9afd93bda122ca4a8d6d099c90d425c791912112ced6f3d81de14c227154d71c"
         },
         {
           "name": "aquasecurity:trivy:Reference",
@@ -87,7 +87,7 @@
         },
         {
           "name": "aquasecurity:trivy:RepoDigest",
-          "value": "lab243@sha256:4ae88e75e1792f6b57f6b6bd0d9e36e7c23006b0879aa9e2145f1dacfb66bc96"
+          "value": "lab243@sha256:9afd93bda122ca4a8d6d099c90d425c791912112ced6f3d81de14c227154d71c"
         },
         {
           "name": "aquasecurity:trivy:RepoTag",
@@ -106,7 +106,7 @@
   },
   "components": [
     {
-      "bom-ref": "c2da3f94-2a3e-4c4b-8faf-b294c880a108",
+      "bom-ref": "5f0a982e-b9e0-426b-8c31-31ec0db45e7c",
       "type": "operating-system",
       "name": "debian",
       "version": "12.15",
@@ -122,7 +122,7 @@
       ]
     },
     {
-      "bom-ref": "d7bbfd00-b7b1-4e84-8267-a3840f777ce3",
+      "bom-ref": "833755b6-b7a6-426f-a4b7-97cbbe993d52",
       "type": "application",
       "name": "app",
       "properties": [
@@ -417,7 +417,7 @@
   ],
   "dependencies": [
     {
-      "ref": "c2da3f94-2a3e-4c4b-8faf-b294c880a108",
+      "ref": "5f0a982e-b9e0-426b-8c31-31ec0db45e7c",
       "dependsOn": [
         "pkg:deb/debian/base-files@12.4%2Bdeb12u15?arch=amd64&distro=debian-12.15",
         "pkg:deb/debian/ca-certificates@20250419~deb12u1?arch=all&distro=debian-12.15",
@@ -427,7 +427,7 @@
       ]
     },
     {
-      "ref": "d7bbfd00-b7b1-4e84-8267-a3840f777ce3",
+      "ref": "833755b6-b7a6-426f-a4b7-97cbbe993d52",
       "dependsOn": [
         "pkg:golang/lab243"
       ]
@@ -463,10 +463,10 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:oci/lab243@sha256:4ae88e75e1792f6b57f6b6bd0d9e36e7c23006b0879aa9e2145f1dacfb66bc96?arch=amd64&repository_url=index.docker.io%2Flibrary%2Flab243",
+      "ref": "pkg:oci/lab243@sha256:9afd93bda122ca4a8d6d099c90d425c791912112ced6f3d81de14c227154d71c?arch=amd64&repository_url=index.docker.io%2Flibrary%2Flab243",
       "dependsOn": [
-        "c2da3f94-2a3e-4c4b-8faf-b294c880a108",
-        "d7bbfd00-b7b1-4e84-8267-a3840f777ce3"
+        "5f0a982e-b9e0-426b-8c31-31ec0db45e7c",
+        "833755b6-b7a6-426f-a4b7-97cbbe993d52"
       ]
     }
   ],
